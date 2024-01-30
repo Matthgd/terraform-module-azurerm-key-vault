@@ -1,7 +1,5 @@
-variable "resource_group" {
-  type = object({
-    name = string
-  })
+variable "resource_group_name" {
+  type = string
 }
 
 variable "name" {
@@ -13,10 +11,7 @@ variable "name" {
 }
 
 variable "location" {
-  type = object({
-    name = string
-    alias = string
-  })
+  type = string
 }
 
 variable "enabled_for_disk_encryption" {
